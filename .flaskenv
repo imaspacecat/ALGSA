@@ -1,0 +1,3 @@
+FLASK_APP=main.py
+FLASK_DEBUG=true
+SECRET_KEY=alksjdlkqwdmndqwpeudiohdjkvfbsajsdlscvkdsnwqpsufoweh
