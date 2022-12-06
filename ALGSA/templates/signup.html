@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% for message in get_flashed_messages() %}
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            {{ message }}
+        </div>
+    {% endfor %}
+
+    <h1>Sign Up</h1>
+    
+    <form method="POST">
+        {{ form.csrf_token }}
+
+        <div class="input-group mb-3">
+            {{ form.name.label }}
+            {{ form.name(placeholder="John Snow") }}
+
+        </div>
+    </form>
+{% endblock %}
+
